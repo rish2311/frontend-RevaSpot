@@ -1,0 +1,19 @@
+[
+    {
+        "name": "age_range",
+        "values": [
+            "26-35",
+            "36-45"
+        ],
+        "operator": "in",
+        "include": "empty"
+    },
+    {
+        "name": "city",
+        "values": [
+            "Bangalore"
+        ],
+        "operator": "not_in",
+        "include": "not_empty"
+    }
+]

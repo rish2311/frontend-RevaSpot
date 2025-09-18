@@ -1,0 +1,188 @@
+[
+    {
+        "label": "Personal",
+        "name": "personal",
+        "items": [
+            {
+                "label": "Gender",
+                "name": "gender",
+                "options": {
+                    "type":"static",
+                    "values": [
+                        {
+                            "label": "Male",
+                            "name": "male"
+                        },{
+                            "label": "Female",
+                            "name": "female"
+                        },{
+                            "label": "Other",
+                            "name": "other"
+                        }
+                    ]
+                }
+            },
+            {
+                "label": "Age Range",
+                "name": "age_range",
+                "options": {
+                    "type":"static",
+                    "values": [
+                        {
+                            "label": "Under 25",
+                            "name": "18-25"
+                        },{
+                            "label": "26 to 35 years",
+                            "name": "26-35"
+                        },{
+                            "label": "36 to 45 years",
+                            "name": "36-45"
+                        },{
+                            "label": "46 to 55 years",
+                            "name": "46-55"
+                        },{
+                            "label": "66 to 75 years",
+                            "name": "66-75"
+                        }
+                    ]
+                }
+            },
+            {
+                "label":"Location",
+                "name":"location",
+                "items":[
+                    {
+                        "label":"Country",
+                        "name":"country",
+                        "options": {
+                            "type":"static",
+                            "values": [
+                                "India",
+                                "USA",
+                                "UK",
+                                "Australia",
+                                "Canada"
+                            ]
+                        }
+                    },
+                    {
+                        "label":"State",
+                        "name":"state",
+                        "options": {
+                            "type":"static",
+                            "values": [
+                                "Maharashtra",
+                                "Karnataka",
+                                "Tamil Nadu",
+                                "Delhi",
+                                "Kerala"
+                            ]
+                        }
+                    },
+                    {
+                        "label":"City",
+                        "name":"city",
+                        "options": {
+                            "type":"dynamic",
+                            "fetch_url": "/filters/city/options?q=substring"
+                        }
+                    }
+                ]
+            },
+            {
+                "label": "Marital Status",
+                "name": "marital_status",
+                "options": {
+                    "type":"static",
+                    "values": [
+                        "Single",
+                        "Married",
+                        "Divorced",
+                        "Widowed"
+                    ]
+                }
+            }
+        ]  
+    },
+    {
+        "label": "Professional",
+        "name": "professional",
+        "items": [
+            {
+                "label": "Industry",
+                "name": "industry",
+                "options": {
+                    "type":"static",
+                    "values": [
+                        "IT",
+                        "Healthcare",
+                        "Finance",
+                        "Education",
+                        "Manufacturing"
+                    ]
+                }
+            },
+            {
+                "label": "Designation",
+                "name": "designation",
+                "options": {
+                    "type":"static",
+                    "values": [
+                        "Software Engineer",
+                        "Doctor",
+                        "Accountant",
+                        "Teacher",
+                        "Manager"
+                    ]
+                }
+            },
+            {
+                "label": "Experience",
+                "name": "experience",
+                "options": {
+                    "type":"static",
+                    "values": [
+                        "0-1",
+                        "1-3",
+                        "3-5",
+                        "5-10",
+                        "10-15",
+                        "15-20",
+                        "20-25",
+                        "25-30",
+                        "30-35",
+                        "35-40"
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "label": "Financial",
+        "name": "financial",
+        "items": [
+            {
+                "label": "Salary",
+                "name": "salary",
+                "options": {
+                    "type": "static",
+                    "values": [
+                        "10000 - 20000",
+                        "20000 - 20000"
+                    ]
+                }
+            },
+            {
+                "label": "Net Worth",
+                "name": "net_worth",
+                "options": {
+                    "type": "static",
+                    "values": [
+                        "10000 - 20000",
+                        "20000 - 20000"
+                    ]
+                }
+            }
+        ]
+    }
+]
